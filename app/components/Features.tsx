@@ -64,31 +64,30 @@ const Features = () => {
             <p className='captions'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        {/* <div className='flex items-center justify-center gap-10 mb-10'>
-            
-            
-            
-        </div> */}
+        
         <div className="items-center pb-20">
-        <Slider {...settings}>
-        {images.map((image, index) => {
-          return (
-            <div key={index} className='slider-image-container px-5 cursor-move pb-10 '>
-              <Image className='slider-image' src={image} alt='slider image'  />
-            </div>
-          );
-        })}
-      </Slider>
+            <Slider {...settings}>
+            {images.map((image, index) => {
+              return (
+                <div key={index} className='slider-image-container px-5 cursor-move pb-10 '>
+                  <Image className='slider-image' src={image} alt='slider image'  />
+                </div>
+              );
+            })}
+          </Slider>
 
       <div className={`text-center pb-24 ${animateText ? 'animate-text' : ''}`}>
         <h2 className='h2-heading mb-8'>Client 1</h2>
         <p className='captions'>Dubai, United Arab Emirates</p>
       </div>
 
+      </div>
+
       <style jsx>{`
-      
+    
         // .slider-image{
         //   width: 100%;
+        //   height:300px;
         //   object-fit:conver
         // }
         // .rotate-left {
@@ -97,6 +96,8 @@ const Features = () => {
         // .rotate-right {
         //   transform: rotate(30deg);
         // }
+
+        //text animation
         .animate-text {
           animation: moveUp 0.9s ease-out forwards;
         }
@@ -111,7 +112,7 @@ const Features = () => {
           }
         }
       `}</style>
-    </div>
+   
 </div>
     
   )
