@@ -97,7 +97,7 @@ const Hero = () => {
     margin-top: 15rem;
   }
     .hero-button-container{
-     margin-top: 15rem;
+     margin-top: 30rem;
     }
 }
       
