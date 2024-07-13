@@ -52,9 +52,9 @@ const Hero = () => {
     <div>
       <Navbar />
 
-    <div className='absolute hero-content z-10 flex mt-[16rem] ml-[4rem] sm:mt-[19rem] md:mt-[19rem] lg:mt-[22rem] lg:ml-[9rem]'>
+    <div className='absolute  hero-title-container z-10 flex mt-[16rem] ml-[4rem] sm:mt-[19rem] md:mt-[19rem] lg:mt-[22rem] lg:ml-[9rem]'>
       
-      <div className='w-9/12 lg:w-3/5 hero-title-container' >
+      <div className='w-9/12 lg:w-3/5' >
         <h3 className='h3-title mb-6'>Welcome To TenTwenty Farms</h3>
         <h1 className='h1-m-title lg:h1-title'>From our Farms to your hands</h1>
           
