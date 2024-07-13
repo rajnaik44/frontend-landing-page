@@ -67,7 +67,7 @@ const Hero = () => {
       </div>
       
       <div className='p-5 border border-[#EEF4F9]'>
-      <Image src={NextImage} alt='image_icon' />
+      <Image src={NextImage} alt='image_icon'  />
       </div>
 
       <div className='flex number-muted items-center gap-4'>
@@ -86,7 +86,7 @@ const Hero = () => {
     <Slider ref={sliderRef} {...settings}>
       {images.map((image, index) => (
         <div key={index} className='h-screen w-screen p-0 m-0'>
-          <Image className='h-screen w-screen p-0 m-0' src={image} alt={`hero image ${index}`} layout='contain' />
+          <Image className='h-screen w-screen p-0 m-0' src={image} alt={`hero image ${index}`}  />
         </div>
       ))}
     </Slider>
