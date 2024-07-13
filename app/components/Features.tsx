@@ -23,17 +23,18 @@ const Features = () => {
 
   const settings = {
     afterChange: handleAfterChange,
+    
     dots: false,
     infinite: true,
     speed: 900,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 1, 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 1, 
         }
       },
       {
@@ -41,7 +42,7 @@ const Features = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: false, 
         }
       },
       {
@@ -49,7 +50,7 @@ const Features = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: false, 
         }
       }
     ]
@@ -57,9 +58,9 @@ const Features = () => {
   };
   return (
     <div className='mb-20'>
-        <div className='mx-auto w-[20rem] text-center mt-20 mb- md:w-[28rem]  lg:w-[33rem]'>
+        <div className='mx-auto w-[20rem] pb-5 text-center mt-40 mb- md:w-[28rem]  lg:w-[35rem]'>
 
-            <h2 className='h2-title mb-5' >Quality Products</h2>
+            <h2 className='h2-title mb-16' >Quality Products</h2>
             <p className='captions'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
@@ -71,15 +72,9 @@ const Features = () => {
         <div className="items-center pb-20">
         <Slider {...settings}>
         {images.map((image, index) => {
-          let className = 'slider-image px-5 cursor-move';
-          if (index === (activeSlide + 1) % images.length) {
-            className += ' rotate-right pb-10';
-          } else if (index === (activeSlide - 1 + images.length) % images.length) {
-            className += ' rotate-left pb-10';
-          }
           return (
-            <div key={index} className={className}>
-              <Image src={image} alt={`slider image ${index}`} />
+            <div key={index} className='slider-image-container px-5 cursor-move pb-10 '>
+              <Image className='slider-image' src={image} alt='slider image'  />
             </div>
           );
         })}
@@ -91,10 +86,11 @@ const Features = () => {
       </div>
 
       <style jsx>{`
-        .slider-image img {
-          width: 100%;
-          height: auto;
-        }
+      
+        // .slider-image{
+        //   width: 100%;
+        //   object-fit:conver
+        // }
         // .rotate-left {
         //   transform: rotate(-30deg);
         // }
@@ -102,7 +98,7 @@ const Features = () => {
         //   transform: rotate(30deg);
         // }
         .animate-text {
-          animation: moveUp 0.9s ease-out;
+          animation: moveUp 0.9s ease-out forwards;
         }
         @keyframes moveUp {
           from {
