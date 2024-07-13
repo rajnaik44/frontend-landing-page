@@ -49,8 +49,8 @@ const Navbar = () => {
             <div>
               <div className="flex justify-between w-full items-center ">
               
-              <div className='curser-pointer flex items-center gap-x-4 border-r-2 border-2 border-black bg-[#FFFCFA] px-4 py-2'>
-          <p className='semi-links '>Contact us</p>
+              <div className='cursor-pointer flex items-center gap-x-4 border-r-2 border-2 border-black bg-[#FFFCFA] px-4 py-2'>
+          <p className='semi-links cursor-pointer'>Contact us</p>
           <Image src={Arrow} alt='Arrow_Icon' />
         </div>
                 
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="border-b border-gray-300 my-4">
-                <p className="w-[85%] md:w-[90%] py-4">
+                <p className="w-[85%] md:w-[90%] py-4 h2-heading">
                   TenTwenty
                 </p>
               </div>

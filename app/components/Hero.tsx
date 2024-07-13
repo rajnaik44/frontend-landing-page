@@ -54,14 +54,14 @@ const Hero = () => {
 
     <div className='absolute hero-content z-10 flex mt-[16rem] ml-[4rem] sm:mt-[19rem] md:mt-[19rem] lg:mt-[22rem] lg:ml-[9rem]'>
       
-      <div className='w-9/12 lg:w-3/5' >
+      <div className='w-9/12 lg:w-3/5 hero-title-container' >
         <h3 className='h3-title mb-6'>Welcome To TenTwenty Farms</h3>
         <h1 className='h1-m-title lg:h1-title'>From our Farms to your hands</h1>
           
       </div>
     </div>
 
-    <div onClick={next} className='absolute z-10 opacity-6 gap-5 flex mt-[35rem] ml-[4rem] lg:mt-[40rem] lg:ml-[9rem]'>
+    <div onClick={next} className='hero-button-container absolute z-10 opacity-6 gap-5 flex mt-[35rem] ml-[4rem] lg:mt-[40rem] lg:ml-[9rem]'>
       <div className='absolute top-12 left-10'>
         <p className='captions'>Next</p>
       </div>
@@ -91,7 +91,18 @@ const Hero = () => {
       ))}
     </Slider>
 
-
+    <style jsx>{`
+    @media only screen and (max-width: 1368px) and (max-height: 655px) {
+  .hero-title-container {
+    margin-top: 15rem;
+  }
+    .hero-button-container{
+     margin-top: 15rem;
+    }
+}
+      
+      
+    `}</style>
         
       
     </div>
